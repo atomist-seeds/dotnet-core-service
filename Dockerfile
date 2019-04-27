@@ -5,6 +5,6 @@ COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
-EXPOSE 5000
+EXPOSE 8080
 
 ENTRYPOINT ["dotnet", "./out/dotnetcoreapp.dll"]
