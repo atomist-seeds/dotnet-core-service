@@ -1,37 +1,62 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    color: #3a3a3a;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    padding: 10vh;
+    text-align: center;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+.top-color-bar {
+    background: #c4dc71;
+    background: -moz-linear-gradient(left, #c4dc71 0%, #2a7d7d 48%, #1a334b 100%);
+    background: -webkit-linear-gradient(left, #c4dc71 0%, #2a7d7d 48%, #1a334b 100%);
+    background: linear-gradient(to right, #c4dc71 0%, #2a7d7d 48%, #1a334b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4dc71', endColorstr='#1a334b', GradientType=1);
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Heebo', sans-serif;
+    line-height: 1;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
+h1 {
+    color: #1a334b;
+    font-size: 72px;
+    letter-spacing: -1px;
+    margin: 25px 0 15px 0;
+}
+
+a {
+    color: #2a7d7d;
+}
+
+.message-content {
+    margin: 0 auto;
+    max-width: 50vw;
+}
+
+.website-link {
+    position: absolute;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.website-link a {
+    font-size: 14px;
+    text-decoration: none;
 }
